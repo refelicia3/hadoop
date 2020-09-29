@@ -44,7 +44,7 @@ if current_idx:
 
 %%bash
 
-OUT_DIR="coursera_mr_task0"
+OUT_DIR="wordcount_result_"$(date +"%s%6N")
 NUM_REDUCERS=8  # Do not change it
 
 hdfs dfs -rm -r -skipTrash ${OUT_DIR} > /dev/null
